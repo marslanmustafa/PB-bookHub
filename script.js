@@ -5,7 +5,7 @@ document.addEventListener("contextmenu", function (e) {
 
 let hamburger = document.querySelector(".hamburger")
 hamburger.addEventListener("click", ()=> {
-  let navbar = document.querySelector(".header-bottom")
+  let navbar = document.querySelector(".navbar")
   navbar.classList.toggle("active");
   let line1 = document.querySelector('.line1')
   line1.classList.toggle("active");
@@ -14,9 +14,9 @@ hamburger.addEventListener("click", ()=> {
   let line3 = document.querySelector('.line3')
   line3.classList.toggle("active");
 
-  let list = document.querySelector(".grades ul");
+  let list = document.querySelector(".nav-btns");
   list.classList.toggle("active");
-  let listf = document.querySelector(".grades ul.active")  
+  let listf = document.querySelector(".nav-btns ul.active")  
    listf.style.opacity = "100%";
 })
 
