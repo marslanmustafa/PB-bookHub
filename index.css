@@ -87,6 +87,18 @@ header img{
     padding: 10px;
     letter-spacing: 1px;
 }
+
+@media(max-width:705px){
+    .inMainContainer img {
+        display: none;
+    }
+}
+@media(max-width:578px){
+    .list {
+        display: none;
+    }
+}
+
 .explore{
     margin-top: 10px;
     width: 100vw;
@@ -126,7 +138,7 @@ header img{
 .quiz{
     width: 100vw;
     margin: 12px 2px;
-    height: 230px;
+    height: 264px;
     display: flex;
     align-items: center;
     justify-content: center;
