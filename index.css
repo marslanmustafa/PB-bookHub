@@ -249,7 +249,20 @@ tbody tr a {
     }
 }
 
+@media(max-width:373px){
+    .g-sign {
+        border-radius: 50px;
+        width: 12%;
+        overflow: hidden;
+    }
+    .menu__link {
+        font-size: 1rem;
+    }
+}
 @media(max-width:321px){
+    .g-sign {
+        width: 14%;
+    }
     table{
         width: 89%;
     }
@@ -332,6 +345,14 @@ footer {
     font-size: 1rem;
     font-weight: 300;
   }
-  .quiz{
-    height: 80vh;
-  }
+
+  @media(max-width:373px){
+    .g-sign {
+        border-radius: 50px;
+        width: 12%;
+        overflow: hidden;
+    }
+    .menu__link {
+        font-size: 1rem;
+    }
+}
