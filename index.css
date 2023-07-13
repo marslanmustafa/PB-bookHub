@@ -10,6 +10,9 @@ a,li{
     text-decoration: none;
     cursor: pointer;
 }
+h1{
+   color:  rgb(0, 110, 129);
+}
 header{
     width: 100vw;
     height: 80px;
@@ -117,9 +120,12 @@ header img{
     flex-direction: column;
     /* width: 70%; */
 }
-.exploreDetail h1{
+.exploreDetail h1 ,.exploreDetail h2{
     color: rgb(0, 110, 129);
-    padding: 6px;
+    padding: 8px;
+}
+.exploreDetail h2{
+    margin-top: 12px;
 }
 .exploreDetail h3{
     color: #222222;
@@ -128,7 +134,7 @@ header img{
     padding: 10px;
 }
 .exploreDetail ul li{
-    padding: 6px;
+    padding: 8px;
 }
 .exploreDetail a{
     font-size: 16px;
@@ -166,12 +172,98 @@ header img{
     border-radius: 12px;
     letter-spacing: 1px;
 }
+.prepClass{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 678px; */
+}
+.prepClass h1{
+    text-align: center;
+}
 
 
 
 
-.footer {
-    position: relative;
+
+
+
+table {
+    width: 80%;
+    margin: auto;
+    align-self: center;
+
+}
+
+tbody tr:first-child td{
+    font-weight: bold;
+    font-size: 16px;
+    color:  rgb(0, 110, 129);
+    letter-spacing: 1px;
+}
+tbody tr td {
+    color: #222222;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 18px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+tbody tr a {
+    background-color:  rgb(0, 110, 129);
+    color: #fff;
+    text-shadow: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 6px;
+    font-size: 16px;
+}
+@media(max-width:438px) {
+    table {
+        width: 60%;
+    }
+
+    tbody tr:first-child {
+        font-size: 15px;
+    }
+    tbody tr td{
+        padding: 15px 6px;
+        font-size: 14px;
+    }
+    
+    tbody tr a {
+        padding: 6px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:321px){
+    table{
+        width: 89%;
+    }
+    tbody tr:first-child {
+        display: none;
+    }
+    tbody tr{
+        border: 1px solid #006e81;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    tbody tr td{
+        padding: 15px 6px;
+        font-size: 16px;
+
+    }
+    
+}
+
+
+
+footer {
     width: 100%;
     background: linear-gradient(-150deg, #222222 15%, #373737 70%, #3c4859 94%);
     min-height: 100px;
@@ -217,6 +309,7 @@ header img{
     text-decoration: none;
     opacity: 0.75;
     font-weight: 300;
+    padding: 8px;
   }
   
   .menu__link:hover {
