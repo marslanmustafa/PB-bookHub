@@ -7,7 +7,51 @@
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
-</head>
+    <style>    
+        .faq {
+            width: 100vw;
+            height: 95vh;
+          padding: 30px;
+          text-align: center;
+        }
+        @media(max-width:578px){
+            .faq{
+                height: fit-content;
+            }
+        }
+        h1 {
+          color: rgb(0, 110, 129);
+        }
+    
+        .question {
+          font-weight: bold;
+          font-size: 18px;
+          color: rgb(0, 110, 129);
+          cursor: pointer;
+          padding: 10px 8px;
+          margin-bottom: 10px;
+        }
+    
+        .answer {
+          display: none;
+          font-size: 16px;
+          color: #222222;
+          margin-top: 10px;
+        }
+      </style>
+      <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const questions = document.querySelectorAll('.question');
+    
+          questions.forEach(function(question) {
+            question.addEventListener('click', function() {
+              const answer = this.nextElementSibling;
+              answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+          });
+        });
+      </script>
+    </head>
 <body>
     <header>
         <img src="logo.png" >
@@ -24,5 +68,72 @@
             <button>Sign In</button>
         </div>
     </header>
+
+        <!-- Place for FAQs -->
+
+
+        
+  <div class="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="question">How can I download books from this website?</div>
+      <div class="answer">
+        To download books, you need to create an account on our website. Once logged in, browse our collection of books, select the book you want, and click on the download button to start the download.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Can I take quizzes related to the books?</div>
+      <div class="answer">
+        Yes, we offer quizzes for many of the books available on our website. After reading a book, you can access the corresponding quiz and test your knowledge. Quizzes help reinforce your understanding of the book's content.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">What are the benefits of reading books?</div>
+      <div class="answer">
+        Reading books provides numerous benefits, including:
+        <ul>
+          <li>Enhancing knowledge and learning new concepts</li>
+          <li>Improving vocabulary and language skills</li>
+          <li>Boosting creativity and imagination</li>
+          <li>Reducing stress and improving mental health</li>
+          <li>Developing critical thinking and analytical skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+
+        <footer class="footer">
+   
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html" target="_blank">Contact Us </a></li>
+              <li class="menu__item"><a class="menu__link" href="help.html" target="_blank">Help</a></li>
+              <li class="menu__item"><a class="menu__link" href="https:\\www.biselahore.com" target="_blank">Bise Lahore</a></li> 
+            </ul>
+            <p>&copy;2023 PB BookHub | All Rights Reserved</p>
+          </footer>
 </body>
 </html>
+
+

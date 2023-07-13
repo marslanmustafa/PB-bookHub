@@ -13,6 +13,7 @@ a,li{
 h1{
    color:  rgb(0, 110, 129);
 }
+
 header{
     width: 100vw;
     height: 80px;
@@ -23,6 +24,10 @@ header{
 }
 header img{
     width: 150px;
+}
+.g-sign {
+    border-radius: 32px;
+    overflow: hidden;
 }
 .list{
     width: 50%;
@@ -99,6 +104,11 @@ header img{
 @media(max-width:578px){
     .list {
         display: none;
+    }
+    .g-sign {
+        border-radius: 32px;
+        width: 9%;
+        overflow: hidden;
     }
 }
 
@@ -322,4 +332,6 @@ footer {
     font-size: 1rem;
     font-weight: 300;
   }
-  
+  .quiz{
+    height: 80vh;
+  }

@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PB BookHub | Contact</title>
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PB BookHub | Contact Us</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
+  <style>
+    .contact {
+      padding: 30px;
+      height: 80vh;
+    }
+   
+
+    h1 {
+      color: rgb(0, 110, 129);
+      text-align: center;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+      width: 50%;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    .submit-btn {
+      background-color: rgb(0, 110, 129);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    @media(max-width:578px){
+        .contact-form {
+            width: 80%;}
+    }
+  </style>
 </head>
+
 <body>
     <header>
         <img src="logo.png" >
@@ -16,8 +69,8 @@
         <div class="list">
             <ul>
                 <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="contact.html" >Contact Us</a></li>
-                <li><a href="help.html" target="_blank">Help</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="help.html" >Help</a></li>
             </ul>
         </div>
         <!-- for login to google -->
@@ -25,5 +78,59 @@
             <button>Sign In</button>
         </div>
     </header>
+
+
+  <div class="contact">
+    <h1>Contact Us</h1>
+
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+   
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html" target="_blank">Contact Us </a></li>
+      <li class="menu__item"><a class="menu__link" href="help.html" target="_blank">Help</a></li>
+      <li class="menu__item"><a class="menu__link" href="https:\\www.biselahore.com" target="_blank">Bise Lahore</a></li> 
+    </ul>
+    <p>&copy;2023 PB BookHub | All Rights Reserved</p>
+  </footer>
 </body>
+
 </html>
