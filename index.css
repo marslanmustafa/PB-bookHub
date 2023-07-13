@@ -347,6 +347,13 @@ footer {
   }
   .Quiz{
     height:78vh;
+    width: 100vw;
+    margin: 12px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
   }
 
   @media(max-width:373px){
