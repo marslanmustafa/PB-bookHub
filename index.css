@@ -165,6 +165,7 @@ header img{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    overflow-x: visible;
     /* width: 70%; */
 }
 .exploreDetail h1 ,.exploreDetail h2{
