@@ -134,6 +134,9 @@ header img{
     .inMainContainer img {
         display: none;
     }
+    .discription {
+        width: 99%;
+    }
     .headerDiv{
         width: 70%;
       }
