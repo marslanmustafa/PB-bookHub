@@ -158,7 +158,7 @@ header img{
 .explore{
     margin-top: 10px;
     width: 100vw;
-    height: 320px;
+    /* height: 320px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -171,7 +171,8 @@ header img{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    overflow-x: visible;
+    overflow-x: unset ;
+    overflow-y: unset;
     /* width: 70%; */
 }
 .exploreDetail h1 ,.exploreDetail h2{
@@ -193,6 +194,7 @@ header img{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 70%;
+    gap: 2.4px;
 }
 .exploreDetail ul li{
     border: 2px solid rgb(0, 110, 129);
