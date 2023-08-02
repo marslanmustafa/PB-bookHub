@@ -56,7 +56,7 @@ header img{
     align-items: center;
     width: 35%;
   }
-.g-sign {
+.g-sign ,.g-signin2 {
     border-radius: 50px;
     overflow: hidden;
 }
